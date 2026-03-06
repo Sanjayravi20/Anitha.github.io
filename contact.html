@@ -1,8 +1,7 @@
-```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact - Beauty Salon</title>
+<title>Contact</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,35 +18,27 @@
 </nav>
 </header>
 
-<h2>Contact Us</h2>
+<h2 class="title">Contact Us</h2>
 
+<div class="contact-container">
+
+<div class="contact-info">
 <p><b>Phone:</b> +91 9876543210</p>
 <p><b>Email:</b> glowbeauty@gmail.com</p>
-<p><b>Location:</b> Tamil Nadu, India</p>
+<p><b>Location:</b> Tamil Nadu</p>
+</div>
 
-<h2>Book Appointment</h2>
+<form class="contact-form">
 
-<form>
-<label>Name:</label><br>
-<input type="text" name="name"><br><br>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
 
-<label>Phone:</label><br>
-<input type="text" name="phone"><br><br>
+<button>Send Message</button>
 
-<label>Service:</label><br>
-<select name="service">
-<option>Facial</option>
-<option>Hair Styling</option>
-<option>Bridal Makeup</option>
-<option>Hair Spa</option>
-</select><br><br>
-
-<label>Message:</label><br>
-<textarea name="message"></textarea><br><br>
-
-<button type="submit">Submit</button>
 </form>
+
+</div>
 
 </body>
 </html>
-```
