@@ -1,22 +1,21 @@
 body{
+font-family: Arial;
 margin:0;
-font-family:Arial;
+background:#fff5f7;
 }
 
 /* HEADER */
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
 background:#ff69b4;
 color:white;
+padding:20px;
+text-align:center;
 }
 
 nav a{
-margin:10px;
 color:white;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -24,26 +23,20 @@ font-weight:bold;
 /* HERO */
 
 .hero{
-background:url("../images/banner.jpg");
-background-size:cover;
-background-position:center;
-height:500px;
-color:white;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+background:#ffe4ec;
 text-align:center;
+padding:80px;
 }
 
-.hero h1{
-font-size:50px;
+.hero h2{
+font-size:40px;
+color:#d63384;
 }
 
 .btn{
 background:#ff1493;
-padding:12px 25px;
 color:white;
+padding:10px 20px;
 text-decoration:none;
 border-radius:5px;
 }
@@ -52,45 +45,36 @@ border-radius:5px;
 
 .services{
 text-align:center;
-padding:50px;
+padding:40px;
 }
 
-.service-container{
+.service-box{
 display:flex;
 justify-content:center;
-gap:30px;
+gap:20px;
 }
 
 .card{
-width:250px;
 background:white;
+padding:20px;
+width:200px;
 border-radius:10px;
-box-shadow:0 5px 10px gray;
-overflow:hidden;
-transition:0.3s;
-}
-
-.card img{
-width:100%;
-}
-
-.card:hover{
-transform:scale(1.05);
+box-shadow:0 0 10px gray;
 }
 
 /* ABOUT */
 
 .about{
-background:#fff0f5;
-padding:40px;
 text-align:center;
+padding:40px;
+background:#ffe4ec;
 }
 
 /* FOOTER */
 
 footer{
+text-align:center;
 background:#ff69b4;
 color:white;
-text-align:center;
 padding:15px;
 }
