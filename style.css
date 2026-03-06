@@ -1,14 +1,13 @@
 body{
-font-family:Arial;
+font-family: Arial;
 margin:0;
+background:#fff0f5;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
 background:#ff69b4;
 color:white;
+text-align:center;
 padding:20px;
 }
 
@@ -16,46 +15,43 @@ nav a{
 color:white;
 margin:10px;
 text-decoration:none;
+font-weight:bold;
 }
 
-.hero{
-background:#ffe4ec;
+.title{
 text-align:center;
-padding:100px;
+margin-top:30px;
 }
 
-.btn{
-background:#ff1493;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-}
+/* services */
 
 .service-container{
 display:flex;
 justify-content:center;
-gap:30px;
-padding:40px;
+gap:20px;
+padding:30px;
 }
 
-.card{
+.service-card{
 background:white;
 padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
 width:220px;
 text-align:center;
-border-radius:10px;
-box-shadow:0 5px 10px gray;
-transition:0.3s;
 }
 
-.card:hover{
-transform:scale(1.05);
+.price{
+color:#ff1493;
+font-weight:bold;
 }
+
+/* gallery */
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:10px;
+gap:15px;
 padding:30px;
 }
 
@@ -64,22 +60,27 @@ width:100%;
 border-radius:10px;
 }
 
-.contact-box{
+/* contact */
+
+.contact-container{
 display:flex;
 justify-content:center;
-padding:40px;
+gap:40px;
+padding:30px;
 }
 
-input, textarea{
+.contact-form input,
+.contact-form textarea{
 display:block;
 width:250px;
-margin:10px;
+margin-bottom:10px;
 padding:8px;
 }
 
 button{
-background:#ff1493;
+background:#ff69b4;
 color:white;
-padding:10px;
 border:none;
+padding:10px 15px;
+cursor:pointer;
 }
