@@ -1,14 +1,14 @@
 body{
 font-family: Arial;
 margin:0;
-background:#fff5f7;
+background:#fff0f5;
 }
 
 header{
 background:#ff69b4;
 color:white;
-padding:20px;
 text-align:center;
+padding:20px;
 }
 
 nav a{
@@ -18,26 +18,69 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.hero{
+.title{
 text-align:center;
-padding:80px;
+margin-top:30px;
 }
 
-.hero h2{
-font-size:40px;
-color:#d63384;
-}
-.services{
+/* services */
+
+.service-container{
 display:flex;
 justify-content:center;
 gap:20px;
+padding:30px;
 }
 
-.card{
+.service-card{
 background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 0 10px gray;
-width:200px;
+width:220px;
 text-align:center;
+}
+
+.price{
+color:#ff1493;
+font-weight:bold;
+}
+
+/* gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+padding:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* contact */
+
+.contact-container{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+display:block;
+width:250px;
+margin-bottom:10px;
+padding:8px;
+}
+
+button{
+background:#ff69b4;
+color:white;
+border:none;
+padding:10px 15px;
+cursor:pointer;
 }
