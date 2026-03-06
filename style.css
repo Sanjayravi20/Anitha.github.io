@@ -1,0 +1,29 @@
+body{
+font-family: Arial;
+margin:0;
+background:#fff5f7;
+}
+
+header{
+background:#ff69b4;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:80px;
+}
+
+.hero h2{
+font-size:40px;
+color:#d63384;
+}
