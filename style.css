@@ -1,85 +1,96 @@
 body{
-font-family:Arial;
 margin:0;
+font-family:Arial;
 }
+
+/* HEADER */
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px;
 background:#ff69b4;
 color:white;
-padding:20px;
 }
 
 nav a{
-color:white;
 margin:10px;
+color:white;
 text-decoration:none;
+font-weight:bold;
 }
 
+/* HERO */
+
 .hero{
-background:#ffe4ec;
+background:url("../images/banner.jpg");
+background-size:cover;
+background-position:center;
+height:500px;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:100px;
+}
+
+.hero h1{
+font-size:50px;
 }
 
 .btn{
 background:#ff1493;
+padding:12px 25px;
 color:white;
-padding:12px 20px;
 text-decoration:none;
+border-radius:5px;
+}
+
+/* SERVICES */
+
+.services{
+text-align:center;
+padding:50px;
 }
 
 .service-container{
 display:flex;
 justify-content:center;
 gap:30px;
-padding:40px;
 }
 
 .card{
+width:250px;
 background:white;
-padding:20px;
-width:220px;
-text-align:center;
 border-radius:10px;
 box-shadow:0 5px 10px gray;
+overflow:hidden;
 transition:0.3s;
+}
+
+.card img{
+width:100%;
 }
 
 .card:hover{
 transform:scale(1.05);
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:10px;
-padding:30px;
-}
+/* ABOUT */
 
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-.contact-box{
-display:flex;
-justify-content:center;
+.about{
+background:#fff0f5;
 padding:40px;
+text-align:center;
 }
 
-input, textarea{
-display:block;
-width:250px;
-margin:10px;
-padding:8px;
-}
+/* FOOTER */
 
-button{
-background:#ff1493;
+footer{
+background:#ff69b4;
 color:white;
-padding:10px;
-border:none;
+text-align:center;
+padding:15px;
 }
