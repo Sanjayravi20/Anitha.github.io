@@ -27,3 +27,17 @@ padding:80px;
 font-size:40px;
 color:#d63384;
 }
+.services{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+width:200px;
+text-align:center;
+}
