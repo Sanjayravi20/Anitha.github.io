@@ -2,15 +2,18 @@
 <html>
 <head>
 
-<title>Contact</title>
+<title>Contact - Glow Beauty</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="contact.css">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
 <div class="logo">Glow Beauty</div>
 
@@ -18,41 +21,67 @@
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
+
 </nav>
 
 </header>
 
-<section class="title">
-<h1>Book Appointment</h1>
-</section>
+
+<section class="contact">
+
+<h1>Contact Us</h1>
+<p class="subtitle">We would love to hear from you</p>
 
 <div class="contact-container">
 
-<form class="contact-form">
+<!-- Phone -->
+<div class="contact-card">
+<i class="fa-solid fa-phone"></i>
+<h3>Phone</h3>
+<p>+91 8438911049</p>
+</div>
 
-<input type="text" placeholder="Your Name" required>
+<!-- Email -->
+<div class="contact-card">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<p>glowbeauty@gmail.com</p>
+</div>
 
-<input type="email" placeholder="Your Email" required>
-
-<input type="tel" placeholder="Phone Number">
-
-<select>
-<option>Select Service</option>
-<option>Facial</option>
-<option>Hair Styling</option>
-<option>Bridal Makeup</option>
-</select>
-
-<input type="date">
-
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">Book Now</button>
-
-</form>
+<!-- Location -->
+<div class="contact-card">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Location</h3>
+<p>Tamil Nadu, India</p>
+</div>
 
 </div>
+
+
+<!-- Contact Form -->
+
+<div class="contact-form">
+
+<h2>Send Message</h2>
+
+<form>
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+</div>
+
+
+
+</div>
+
+</section>
 
 </body>
 </html>
