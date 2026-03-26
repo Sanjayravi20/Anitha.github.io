@@ -18,8 +18,14 @@
 
 <div class="logo">Anitha Make-up Artist</div>
 
-<nav>
-
+<!-- Hamburger Button -->
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+    
+</button>
+  
+<!-- NAV -->
+  
+<nav id="navMenu">
 <a href="index.html">Home</a>
 <a href="service.html">Services</a>
 <a href="contact.html">Contact</a>
@@ -42,5 +48,10 @@
 </div>
 
 </section>
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 </body>
 </html>
