@@ -2,6 +2,7 @@
 body{
   margin:0;
   font-family:Arial;
+  overflow-x:hidden;
 }
 
 /* HEADER */
@@ -24,12 +25,17 @@ header{
 nav{
   display:flex;
   gap:20px;
+  align-items:center;
 }
 
 nav a{
   color:white;
   text-decoration:none;
   font-weight:bold;
+}
+
+nav a:hover{
+  color:#ffd1e1;
 }
 
 /* HAMBURGER */
@@ -75,7 +81,7 @@ nav a{
   background:#f8f8f8;
 }
 
-.service-box{
+.service-container{
   display:flex;
   justify-content:center;
   gap:30px;
@@ -110,19 +116,6 @@ footer{
   padding:15px;
 }
 
-/* CONTACT */
-.contact-box{
-  gap:30px;
-}
-
-.whatsapp-btn{
-  background:#25D366;
-  color:white;
-  padding:10px 20px;
-  text-decoration:none;
-  border-radius:5px;
-}
-
 /* GALLERY */
 .gallery{
   text-align:center;
@@ -148,7 +141,7 @@ footer{
   transform:scale(1.1);
 }
 
-/* ================= MOBILE MENU ================= */
+/* ================= MOBILE MENU FIX ================= */
 @media (max-width:768px){
 
   .menu-btn{
@@ -161,12 +154,8 @@ footer{
     width:100%;
     background:#ff69b4;
     position:absolute;
-    top:70px;
+    top:60px;
     left:0;
-  }
-
-  nav.active{
-    display:flex;
   }
 
   nav a{
@@ -174,7 +163,49 @@ footer{
     border-top:1px solid rgba(255,255,255,0.3);
   }
 
-  header{
-    flex-direction:row;
+  /* THIS IS IMPORTANT */
+  #navMenu.active{
+    display:flex;
   }
+}
+.services{
+text-align:center; 
+padding:50px; 
+background:#f8f8f8; 
+} 
+
+.services h1{ 
+font-size:40px;
+margin-bottom:40px; 
+} 
+
+.service-container{
+display:flex; 
+justify-content:center; 
+gap:30px; 
+flex-wrap:wrap; 
+} 
+
+.service-card{
+background:white; 
+padding:30px; width:250px; 
+border-radius:10px; 
+box-shadow:0 5px 15px rgba(0,0,0,0.2); 
+transition:0.3s; 
+} 
+
+.service-card h2{ 
+color:#ff4d88; 
+} 
+
+.service-card span{
+display:block; 
+margin-top:10px; 
+font-weight:bold; 
+font-size:18px; 
+} 
+
+.service-card:hover{ 
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.3); 
 }
