@@ -94,7 +94,7 @@ nav a:hover{
   border-radius:10px;
   box-shadow:0 5px 10px gray;
   padding:20px;
-  transition:0.3s;
+  transition:0.1s;
 }
 
 .card:hover{
@@ -134,7 +134,7 @@ footer{
   height:200px;
   object-fit:cover;
   border-radius:10px;
-  transition:0.4s;
+  transition:0.2s;
 }
 
 .gallery-container img:hover{
