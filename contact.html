@@ -18,8 +18,13 @@
 <header class="header">
 
 <div class="logo">Anitha Make-up Artist</div>
+<!-- Hamburger Button -->
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+    
+</button>
 
-<nav>
+<!-- NAV -->
+<nav id="navMenu">
 <a href="index.html">Home</a>
 <a href="service.html">Services</a>
 <a href="gallery.html">Gallery</a>
@@ -75,7 +80,11 @@
 <textarea name="message" placeholder="Your Message"></textarea>
 
 <button type="submit">Send Message</button>
-
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 </form>
 </div>
 
